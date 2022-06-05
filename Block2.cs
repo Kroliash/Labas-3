@@ -21,7 +21,7 @@ namespace Labas_3
             return studs;
         }
 
-        static void runMenu(StudentStruct.Student[] studs)
+        static void RunMenu(StudentStruct.Student[] studs)
         {
             Console.Clear();
             Console.WriteLine("Here is the whole list of students:");   
@@ -64,14 +64,14 @@ namespace Labas_3
                     }
                     sum += (int)Char.GetNumericValue(arr[j]);
                 }
-                gpa = sum / 3;
+                gpa = sum / arr.Length;
             return Math.Round(gpa,2);                  
         }
 
-        public static void DoBlock()
+        public static void DoBlock()    
         {
             StudentStruct.Student[] studs = ReadInfo();
-            runMenu(studs);
+            RunMenu(studs);
 
         }
     }
