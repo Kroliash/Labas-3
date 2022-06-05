@@ -25,9 +25,9 @@ namespace Labas_3
         {
             Console.Clear();
             Console.WriteLine("Here is the whole list of students:");   
-            Console.WriteLine("--------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------");
             ToString(studs);
-            Console.WriteLine("--------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------");
             bool flag = false;
             Console.WriteLine("Students with a grade of 5 in physics:");
             for (int i = 0; i < studs.Length; i++)
